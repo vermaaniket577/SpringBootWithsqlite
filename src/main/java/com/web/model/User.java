@@ -31,6 +31,7 @@ import lombok.NoArgsConstructor;
 	    private LocalDate dob;
 
 	    @NotEmpty
+	@Size(min = 2,message = "Name should have atleast 2 characters")
 	    private String address;
 
 	    // getters and setters
