@@ -26,6 +26,8 @@ import lombok.NoArgsConstructor;
 	    private String lastName;
 
 	    @NotNull
+	@Past(message = "Birth date should be in the past  ")
+
 	    private LocalDate dob;
 
 	    @NotEmpty
